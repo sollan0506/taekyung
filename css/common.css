@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+/* Jarallax 셋팅 */
+.jarallax {
+    position: relative;
+    z-index: 0;
+}
+.jarallax > .jarallax-img {
+    position: absolute;
+    object-fit: cover;
+    font-family: 'object-fit: cover';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+/* ********** gnb Area Start ********* */
+.gnb {
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    z-index: 100;
+}
+.gnb h1 {
+    width: 166px;
+    height: 30px;
+    float: left;
+    margin: 30px 0 0 60px;
+}
+/* gnb ul */
+.gnb > ul {
+    height: 100%;
+
+    position: absolute; left: 50%; top: 50%;
+    
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+
+    z-index: 110;
+}
+.gnb > ul > li {
+    width: 150px;
+    height: 100%;
+    text-align: center;
+    float: left;
+    /* position: relative; */
+}
+.gnb .gnb_bg {
+    width: 100%;
+    height: 365px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    top: 90px;
+    left: 0;
+}
+.gnb > ul > li > a {
+    width: 100%;
+    height: 100%;
+    line-height: 90px;
+    font-size: 1.8rem;
+}
+.gnb .gnb_hidden {
+    /* display: none; */
+    width: 194px;
+    height: 365px;
+    position: absolute;
+    text-align: left;
+    border-left: 1px solid #ccc;
+    z-index: 111;
+    padding: 40px 0 0 30px;
+}
+.gnb > ul > li:first-child .gnb_hidden {
+    left: -200px;
+}
+.gnb > ul > li:nth-child(2) .gnb_hidden {
+    left: -7px;
+}
+.gnb > ul > li:nth-child(3) .gnb_hidden {
+    left: 185px;
+}
+.gnb > ul > li:nth-child(4) .gnb_hidden {
+    left: 378px;
+}
+.gnb > ul > li:nth-child(5) .gnb_hidden {
+    left: 572px;
+}
+.gnb .gnb_hidden > div {
+    font-size: 2rem;
+}
+.gnb .gnb_hidden > ul > li > a {
+    font-size: 1.6rem;
+    color: #707070;
+}
+/* gnb slick slider */
+.gnb .gnb_hidden.slider {
+    /* display: none; */
+    width: 274px;
+    height: 365px;
+    border-left: 1px solid #ccc;
+    position: absolute;
+    z-index: 111;
+    margin-left: 194px;
+}
+.gnb .gnb_hidden .gnb_slick {
+    width: 100%;
+    /* height: 100%; */
+    font-size: 1.8rem;
+    text-align: center;
+}
+.gnb .gnb_hidden .gnb_slick img {
+    max-width: 180px;
+    max-height: 180px;
+}
+.gnb .slick-slide img {
+    display: inline-block;
+}
+.gnb .gnb_hidden .gnb_slick .gnb_slick_txt {
+    margin-top: 30px;
+}
+.gnb .slick-dots li {
+    display: inline-block !important;
+    padding: 0 8px;
+    margin: 0;
+}
+.gnb .slick-dots li button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ababab;
+    text-indent: -999999px;
+    font-size: 0;
+    cursor: pointer;
+}
+.slick-dots li.slick-active button {
+    background-color: #ee1b22;
+    border-color: #ee1b22;
+}
+/* lang_menu */
+.gnb .lang_menu {
+    width: 220px;
+    height: 35px;
+    float: right;
+    margin: 28px 60px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gnb .lang_menu a {
+    display: inline-block;
+    width: 115px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #000;
+    border-radius: 17.5px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.gnb .lang_menu div {
+    display: inline-block;
+    position: relative;
+}

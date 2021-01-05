@@ -11,8 +11,13 @@
     <!-- fullpage CSS -->
     <link rel="stylesheet" href="../css/fullpage.min.css">
 
+    <!-- slick CSS -->
+    <link rel="stylesheet" href="../slick/slick.css">
+    <!-- <link rel="stylesheet" href="../slick/slick-theme.css"> -->
+
     <!-- My CSS -->
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
@@ -21,12 +26,12 @@
     <div class="wrap" id="fullpage">
 
         <!-- gnb Area Start -->
-        <div class="gnb">
-            <div>
+        <div class="gnb clearfix">
+            <!-- <div> -->
                 <h1>
                     <img src="../images/main/logo_on.png" alt="태경농산">
                 </h1>
-                <ul>
+                <ul class="clearfix">
                     <li>
                         <a href="#">회사소개</a>
                         <div class="gnb_hidden">
@@ -90,36 +95,46 @@
                             </ul>
                         </div>
 
-                        <div class="gnb_hidden">
+                        <div class="gnb_hidden slider">
                             <div class="gnb_slick">
                                 <div>
-                                    <img src="../images/main/gnb_img3.jpg" alt="비건 브랜드 - 베지가든">
-                                    <div>비건 브랜드 - 베지가든</div>
+                                    <a href="#">
+                                        <img src="../images/main/gnb_img3.jpg" alt="비건 브랜드 - 베지가든">
+                                    </a>
+                                    <div class="gnb_slick_txt">비건 브랜드 - 베지가든</div>
                                 </div>
                                 <div>
-                                    <img src="../images/main/gnb_img1.jpg" alt="베지가든 숯불향그윽한 궁중너비아니">
-                                    <div>
+                                    <a href="#">
+                                        <img src="../images/main/gnb_img1.jpg" alt="베지가든 숯불향그윽한 궁중너비아니">
+                                    </a>
+                                    <div class="gnb_slick_txt">
                                         베지가든 숯불향그윽한<br>
                                         궁중너비아니
                                     </div>
                                 </div>
                                 <div>
-                                    <img src="../images/main/gnb_img2.jpg" alt="정성가득밥상 매운갈비찜">
-                                    <div>정성가득밥상 매운갈비찜</div>
+                                    <a href="#">
+                                        <img src="../images/main/gnb_img2.jpg" alt="정성가득밥상 매운갈비찜">
+                                    </a>
+                                    <div class="gnb_slick_txt">정성가득밥상 매운갈비찜</div>
                                 </div>
                             </div>
                         </div>
                     </li>
                 </ul>
+                <div class="gnb_bg"></div>
+
                 <div class="lang_menu">
                     <a href="#">회사소개서</a>
-                    <label for="lang_select">KOR</label>
-                    <select id="lang_select">
-                        <option value="eng">ENG</option>
-                        <option value="kor" selected>KOR</option>
-                    </select>
+                    <div>
+                        <label for="lang_select">KOR</label>
+                        <select id="lang_select">
+                            <option value="eng">ENG</option>
+                            <option value="kor" selected>KOR</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </div><!-- gnb Area End -->
 
 
@@ -998,6 +1013,11 @@
     <!-- swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <!-- slick JS -->
+    <script src="../slick/slick.js"></script>
+
+    <!-- My JS -->
+    <script src="../js/main.js"></script>
 
 </body>
 </html>
