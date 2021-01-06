@@ -51,9 +51,10 @@
     height: 100%;
     text-align: center;
     float: left;
-    /* position: relative; */
+    position: relative;
 }
 .gnb .gnb_bg {
+    display: none;
     width: 100%;
     height: 365px;
     background-color: #fff;
@@ -63,13 +64,38 @@
     left: 0;
 }
 .gnb > ul > li > a {
+    display: inline-block;
     width: 100%;
     height: 100%;
+}
+.gnb > ul > li > a > span {
+    position: relative;
     line-height: 90px;
     font-size: 1.8rem;
 }
+.gnb > ul > li > a > span::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: #f00;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.gnb > ul > li.active > a > span::after {
+    width: 100%;
+    left: 0;
+    right: 0;
+}
 .gnb .gnb_hidden {
-    /* display: none; */
+    display: none;
     width: 194px;
     height: 365px;
     position: absolute;
@@ -82,16 +108,16 @@
     left: -200px;
 }
 .gnb > ul > li:nth-child(2) .gnb_hidden {
-    left: -7px;
+    left: -157px;
 }
 .gnb > ul > li:nth-child(3) .gnb_hidden {
-    left: 185px;
+    left: -114px;
 }
 .gnb > ul > li:nth-child(4) .gnb_hidden {
-    left: 378px;
+    left: -70px;
 }
 .gnb > ul > li:nth-child(5) .gnb_hidden {
-    left: 572px;
+    left: -27px;
 }
 .gnb .gnb_hidden > div {
     font-size: 2rem;
@@ -103,6 +129,26 @@
 .gnb .gnb_hidden > ul > li > a {
     font-size: 1.6rem;
     color: #707070;
+    position: relative;
+}
+.gnb .gnb_hidden > ul > li > a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: #f00;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+
+    -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.gnb .gnb_hidden > ul > li > a.active::after {
+    width: 100%;
 }
 /* gnb slick slider */
 .gnb .gnb_hidden.slider {
