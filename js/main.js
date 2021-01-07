@@ -1,5 +1,10 @@
 $(function(){
 
+    // fullpage 선언
+    $('#fullpage').fullpage({
+        scrollBar: true
+	});
+
     // gnb_slick
     $('.gnb_slick').slick({
         dots: true,
@@ -35,4 +40,117 @@ $(function(){
             $(this).removeClass("active");
         }
     );
+
+    // intro_slick
+    $('.intro_slick').slick({
+        dots: false,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        prevArrow: $('.intro .arrow_prev'),
+        nextArrow: $('.intro .arrow_next')
+    });
+
+    // intro slick caption 애니메이션
+    $(".intro #caption1 > div").animate({
+        opacity: "1",
+        marginLeft: "0"
+    }, 800, function(){
+        $(".intro #caption1 > h2").animate({
+            opacity: "1",
+            marginLeft: "0"
+        }, 300, function(){
+            $(".intro #caption1 > p").animate({
+                opacity: "1",
+                marginLeft: "0"
+            }, 300, function(){
+                $(".intro #caption1 > a").animate({
+                    opacity: "1",
+                    marginLeft: "0"
+                }, 300);
+            });
+        });
+    });
+    
+    // On before slide change
+    $('.intro_slick').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        switch (nextSlide) {
+            case 0:
+                // 초기화
+                $(".intro #caption1 > div, .intro #caption1 > h2, .intro #caption1 > p, .intro #caption1 > a").css({opacity: "0", marginLeft: "50px"});
+                
+                // 애니메이션 순차적 적용
+                $(".intro #caption1 > div").animate({
+                    opacity: "1",
+                    marginLeft: "0"
+                }, 800, function(){
+                    $(".intro #caption1 > h2").animate({
+                        opacity: "1",
+                        marginLeft: "0"
+                    }, 300, function(){
+                        $(".intro #caption1 > p").animate({
+                            opacity: "1",
+                            marginLeft: "0"
+                        }, 300, function(){
+                            $(".intro #caption1 > a").animate({
+                                opacity: "1",
+                                marginLeft: "0"
+                            }, 300);
+                        });
+                    });
+                });
+                break;
+            case 1:
+                $(".intro #caption2 > div, .intro #caption2 > h2, .intro #caption2 > p, .intro #caption2 > a").css({opacity: "0", marginLeft: "50px"});
+                $(".intro #caption2 > div").animate({
+                    opacity: "1",
+                    marginLeft: "0"
+                }, 800, function(){
+                    $(".intro #caption2 > h2").animate({
+                        opacity: "1",
+                        marginLeft: "0"
+                    }, 300, function(){
+                        $(".intro #caption2 > p").animate({
+                            opacity: "1",
+                            marginLeft: "0"
+                        }, 300, function(){
+                            $(".intro #caption2 > a").animate({
+                                opacity: "1",
+                                marginLeft: "0"
+                            }, 300);
+                        });
+                    });
+                });
+                break;
+            case 2:
+                $(".intro #caption3 > div, .intro #caption3 > h2, .intro #caption3 > p, .intro #caption3 > a").css({opacity: "0", marginLeft: "50px"});
+                $(".intro #caption3 > div").animate({
+                    opacity: "1",
+                    marginLeft: "0"
+                }, 800, function(){
+                    $(".intro #caption3 > h2").animate({
+                        opacity: "1",
+                        marginLeft: "0"
+                    }, 300, function(){
+                        $(".intro #caption3 > p").animate({
+                            opacity: "1",
+                            marginLeft: "0"
+                        }, 300, function(){
+                            $(".intro #caption3 > a").animate({
+                                opacity: "1",
+                                marginLeft: "0"
+                            }, 300);
+                        });
+                    });
+                });
+                break;
+        }
+    });
+
+    // intro jarallax
+    $('.jarallax').jarallax({
+        speed: 0.9
+    });
 });

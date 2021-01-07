@@ -2,4 +2,154 @@
 
 
 
+/* ********** intro Area Start ********* */
+.intro {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
 
+.intro .intro_slick .jarallax.jarallax1 {
+    height: 100vh;
+    background-image: url(../images/main/main_slide1.jpg);
+}
+.intro .intro_slick .jarallax.jarallax2 {
+    height: 100vh;
+    background-image: url(../images/main/main_slide2.jpg);
+}
+.intro .intro_slick .jarallax.jarallax3 {
+    height: 100vh;
+    background-image: url(../images/main/main_slide3.jpg);
+}
+/* caption */
+.intro .caption {
+    position: absolute;  
+    top: 50%;
+    left: 55%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    color: #fff;
+}
+.intro .caption > div {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    /* 애니메이션용 */
+    opacity: 0;
+    margin-left: 50px;
+}
+.intro .caption > h2 {
+    font-size: 6.6rem;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    /* 애니메이션용 */
+    opacity: 0;
+    margin-left: 50px;
+}
+.intro .caption > p {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    /* 애니메이션용 */
+    opacity: 0;
+    margin-left: 50px;
+}
+.intro .caption > a {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 40px;
+    /* 애니메이션용 */
+    opacity: 0;
+    margin-left: 50px;
+}
+.intro .caption.caption2 {
+    color: #000;
+}
+/* 메인슬라이드 좌우 화살표 */
+.intro .arrow {
+    display: inline-block;
+    width: 120px;
+    height: 80px;
+
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.intro .arrow.arrow_prev {
+    left: 10%;
+    background: url(../images/main/slide-arrow-prev.png) no-repeat right center;
+}
+.intro .arrow.arrow_next {
+    right: 10%;
+    background: url(../images/main/slide-arrow-nxt.png) no-repeat 0 center;
+}
+.intro .arrow button {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    text-indent: -9999px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+.intro .arrow button::after {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    z-index: 1;
+
+    -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.intro .arrow_prev button::after {
+    left: 15px;
+}
+.intro .arrow_next button::after {
+    right: 15px;
+}
+.intro .arrow button:hover::after {
+    background-color: rgba(255, 255, 255, 0.25);
+    z-index: 1;
+    -webkit-transform:scale(1.5);
+    -moz-transform:scale(1.5);
+    -o-transform:scale(1.5);
+    -ms-transform:scale(1.5);
+    transform:scale(1.5);
+}
+/* 스크롤 다운 아이콘 */
+.intro .scroll_ico {
+    position: absolute; 
+    left: 50%; 
+    top: 90%;
+    
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}

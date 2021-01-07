@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <!-- fullpage CSS -->
-    <link rel="stylesheet" href="../css/fullpage.min.css">
+    <link rel="stylesheet" href="../css/jquery.fullpage.min.css">
 
     <!-- slick CSS -->
     <link rel="stylesheet" href="../slick/slick.css">
-    <!-- <link rel="stylesheet" href="../slick/slick-theme.css"> -->
 
     <!-- My CSS -->
     <link rel="stylesheet" href="../css/reset.css">
@@ -22,184 +21,198 @@
 </head>
 <body>
     
-    <!-- wrap Area Start -->
-    <div class="wrap" id="fullpage">
+    <!-- gnb Area Start -->
+    <div class="gnb clearfix">
+        <h1>
+            <img src="../images/main/logo_on.png" alt="태경농산">
+        </h1>
+        <ul class="clearfix">
+            <li>
+                <a href="#">
+                    <span>
+                        회사소개
+                    </span>
+                </a>
+                <div class="gnb_hidden">
+                    <div>회사소개</div>
+                    <ul>
+                        <li><a href="#">태경농산</a></li>
+                        <li><a href="#">회사연혁</a></li>
+                        <li><a href="#">CI</a></li>
+                        <li><a href="#">사업소개</a></li>
+                        <li><a href="#">연구소</a></li>
+                        <li><a href="#">사업장안내</a></li>
+                        <li><a href="#">관계회사</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        비즈니스 솔루션
+                    </span>
+                </a>
+                <div class="gnb_hidden">
+                    <div>비즈니스 솔루션</div>
+                    <ul>
+                        <li><a href="#">건강기능식</a></li>
+                        <li><a href="#">기능성 소재</a></li>
+                        <li><a href="#">추출·농축액</a></li>
+                        <li><a href="#">분말·시즈닝</a></li>
+                        <li><a href="#">후레이크</a></li>
+                        <li><a href="#">소스·양념</a></li>
+                        <li><a href="#">풍미유</a></li>
+                        <li><a href="#">즉석편의식</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        브랜드
+                    </span>
+                </a>
+                <div class="gnb_hidden">
+                    <div>브랜드</div>
+                    <ul>
+                        <li><a href="#">오테이스트</a></li>
+                        <li><a href="#">본테이스트</a></li>
+                        <li><a href="#">베지가든</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        태경소식
+                    </span>
+                </a>
+                <div class="gnb_hidden">
+                    <div>태경소식</div>
+                    <ul>
+                        <li><a href="#">회사공고</a></li>
+                        <li><a href="#">채용공고</a></li>
+                        <li><a href="#">채용안내</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        고객서비스
+                    </span>
+                </a>
+                <div class="gnb_hidden">
+                    <div>고객서비스</div>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">고객의소리</a></li>
+                    </ul>
+                </div>
 
-        <!-- gnb Area Start -->
-        <div class="gnb clearfix">
-            <!-- <div> -->
-                <h1>
-                    <img src="../images/main/logo_on.png" alt="태경농산">
-                </h1>
-                <ul class="clearfix">
-                    <li>
-                        <a href="#">
-                            <span>
-                                회사소개
-                            </span>
-                        </a>
-                        <div class="gnb_hidden">
-                            <div>회사소개</div>
-                            <ul>
-                                <li><a href="#">태경농산</a></li>
-                                <li><a href="#">회사연혁</a></li>
-                                <li><a href="#">CI</a></li>
-                                <li><a href="#">사업소개</a></li>
-                                <li><a href="#">연구소</a></li>
-                                <li><a href="#">사업장안내</a></li>
-                                <li><a href="#">관계회사</a></li>
-                            </ul>
+                <div class="gnb_hidden slider">
+                    <div class="gnb_slick">
+                        <div>
+                            <a href="#">
+                                <img src="../images/main/gnb_img3.jpg" alt="비건 브랜드 - 베지가든">
+                            </a>
+                            <div class="gnb_slick_txt">비건 브랜드 - 베지가든</div>
                         </div>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>
-                                비즈니스 솔루션
-                            </span>
-                        </a>
-                        <div class="gnb_hidden">
-                            <div>비즈니스 솔루션</div>
-                            <ul>
-                                <li><a href="#">건강기능식</a></li>
-                                <li><a href="#">기능성 소재</a></li>
-                                <li><a href="#">추출·농축액</a></li>
-                                <li><a href="#">분말·시즈닝</a></li>
-                                <li><a href="#">후레이크</a></li>
-                                <li><a href="#">소스·양념</a></li>
-                                <li><a href="#">풍미유</a></li>
-                                <li><a href="#">즉석편의식</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>
-                                브랜드
-                            </span>
-                        </a>
-                        <div class="gnb_hidden">
-                            <div>브랜드</div>
-                            <ul>
-                                <li><a href="#">오테이스트</a></li>
-                                <li><a href="#">본테이스트</a></li>
-                                <li><a href="#">베지가든</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>
-                                태경소식
-                            </span>
-                        </a>
-                        <div class="gnb_hidden">
-                            <div>태경소식</div>
-                            <ul>
-                                <li><a href="#">회사공고</a></li>
-                                <li><a href="#">채용공고</a></li>
-                                <li><a href="#">채용안내</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>
-                                고객서비스
-                            </span>
-                        </a>
-                        <div class="gnb_hidden">
-                            <div>고객서비스</div>
-                            <ul>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">고객의소리</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="gnb_hidden slider">
-                            <div class="gnb_slick">
-                                <div>
-                                    <a href="#">
-                                        <img src="../images/main/gnb_img3.jpg" alt="비건 브랜드 - 베지가든">
-                                    </a>
-                                    <div class="gnb_slick_txt">비건 브랜드 - 베지가든</div>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <img src="../images/main/gnb_img1.jpg" alt="베지가든 숯불향그윽한 궁중너비아니">
-                                    </a>
-                                    <div class="gnb_slick_txt">
-                                        베지가든 숯불향그윽한<br>
-                                        궁중너비아니
-                                    </div>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <img src="../images/main/gnb_img2.jpg" alt="정성가득밥상 매운갈비찜">
-                                    </a>
-                                    <div class="gnb_slick_txt">정성가득밥상 매운갈비찜</div>
-                                </div>
+                        <div>
+                            <a href="#">
+                                <img src="../images/main/gnb_img1.jpg" alt="베지가든 숯불향그윽한 궁중너비아니">
+                            </a>
+                            <div class="gnb_slick_txt">
+                                베지가든 숯불향그윽한<br>
+                                궁중너비아니
                             </div>
                         </div>
-                    </li>
-                </ul>
-                <div class="gnb_bg"></div>
-
-                <div class="lang_menu">
-                    <a href="#">회사소개서</a>
-                    <div>
-                        <label for="lang_select"></label>
-                        <select id="lang_select">
-                            <option value="eng">ENG</option>
-                            <option value="kor" selected>KOR</option>
-                        </select>
+                        <div>
+                            <a href="#">
+                                <img src="../images/main/gnb_img2.jpg" alt="정성가득밥상 매운갈비찜">
+                            </a>
+                            <div class="gnb_slick_txt">정성가득밥상 매운갈비찜</div>
+                        </div>
                     </div>
                 </div>
-            <!-- </div> -->
-        </div><!-- gnb Area End -->
+            </li>
+        </ul>
+        <div class="gnb_bg"></div>
 
+        <div class="lang_menu">
+            <a href="#">회사소개서</a>
+            <div>
+                <label for="lang_select"></label>
+                <select id="lang_select">
+                    <option value="eng">ENG</option>
+                    <option value="kor" selected>KOR</option>
+                </select>
+            </div>
+        </div>
+    </div><!-- gnb Area End -->
+
+    <!-- wrap Area Start -->
+    <div class="wrap" id="fullpage">
 
         <!-- intro Area Start -->
         <div class="section intro">
             <div class="intro_slick">
-                <div class="jarallax">
-                    <div>TAEKYUNG WITH NONGSHIM</div>  
-                    <h2>
-                        지난 40여년간<br>
-                        농심의 맛을<br>
-                        책임져왔습니다.
-                    </h2> 
-                    <p>
-                        라면의 건더기 스프부터 스낵의 시즈닝까지<br>
-                        농심의 맛에 핵심역할을 합니다.
-                    </p>
-                    <a href="#">자세히보기</a>
+                <div class="jarallax jarallax1">
+                    <div class="caption" id="caption1">
+                        <div>TAEKYUNG WITH NONGSHIM</div>
+                        <h2>
+                            한국맛을 원천으로<br>
+                            세계최고의 식재문화를<br>
+                            창조합니다.
+                        </h2>
+                        <p>
+                            원료 하나하나 엄선하여 정성껏 만들었습니다.<br>
+                            음식의 맛을 한단계 높여드립니다.
+                        </p>
+                        <a href="#">자세히보기</a>
+                    </div>
                 </div>
-                <div class="jarallax">
-                    <div>Launched new products of Veggie garden</div>  
-                    <h2>
-                        식물성 대체육으로 만든
-                        베지가든 한식 4종
-                        신상품 출시!
-                    </h2> 
-                    <p>
-                        간편한 조리로 채식 식탁을 더욱 풍요롭게 만들어 보세요
-                    </p>
-                    <a href="#">자세히보기</a>
+                <div class="jarallax jarallax2">
+                    <div class="caption caption2" id="caption2">
+                        <div>Launched new products of Veggie garden</div>  
+                        <h2>
+                            지난 40여년간<br>
+                            농심의 맛을<br>
+                            책임져왔습니다.
+                        </h2> 
+                        <p>
+                            라면의 건더기 스프부터 스낵의 시즈닝까지<br>
+                            농심의 맛에 핵심역할을 합니다.
+                        </p>
+                        <a href="#">자세히보기</a>
+                    </div>
                 </div>
-                <div class="jarallax">
-                    <div>Create a New Food Culture</div>  
-                    <h2>
-                        한국맛을 원천으로<br>
-                        세계최고의 식재문화를<br>
-                        창조합니다.
-                    </h2>
-                    <p>
-                        원료 하나하나 엄선하여 정성껏 만들었습니다.
-                        음식의 맛을 한단계 높여드립니다.
-                    </p>
-                    <a href="#">자세히보기</a>
+                <div class="jarallax jarallax3">
+                    <div class="caption" id="caption3">
+                        <div>Create a New Food Culture</div>
+                        <h2>
+                            식물성 대체육으로 만든<br>
+                            베지가든 한식 4종<br>
+                            신상품 출시!
+                        </h2> 
+                        <p>
+                            간편한 조리로 채식 식탁을 더욱 풍요롭게 만들어 보세요
+                        </p>
+                        <a href="#">자세히보기</a>
+                    </div>
                 </div>
             </div>
+            
+            <span class="arrow arrow_prev">
+                <button></button>
+            </span>
+            <span class="arrow arrow_next">
+                <button></button>
+            </span>
+
+            <span class="scroll_ico">
+                <img src="../images/main/ico_wheel.png" alt="스크롤 다운">
+            </span>
         </div><!-- intro Area End -->
 
 
@@ -910,7 +923,7 @@
 
 
         <!-- news Area Start -->
-        <div class="news">
+        <div class="section news">
             <div class="title">
                 <div>PRODUCT</div>
                 <h3>
@@ -953,7 +966,7 @@
 
 
         <!-- recruit Area Start -->
-        <div class="rnd_recruit">
+        <div class="section rnd_recruit">
             <div class="rnd">
                 <img src="../images/main/ico_rnd.png" alt="rnd icon">
                 <div>R&D</div>
@@ -978,7 +991,7 @@
 
 
         <!-- footer Area End -->
-        <div class="footer">
+        <div class="section fp-auto-height footer">
             <a href="#">
                 <img src="../images/main/logo_on.png" alt="태경농산 로고">
             </a>
@@ -1035,6 +1048,15 @@
 
     <!-- slick JS -->
     <script src="../slick/slick.js"></script>
+
+    <!-- fullpage JS -->
+    <script src="../js/jquery.fullpage.min.js"></script>
+
+    <!-- jarallax JS -->
+    <script src="../js/jarallax.min.js"></script>
+
+    <!-- gsap JS -->
+    <script src="../js/gsap.min.js"></script>
 
     <!-- My JS -->
     <script src="../js/main.js"></script>
