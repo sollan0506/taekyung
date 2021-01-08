@@ -251,5 +251,21 @@ $(function(){
 
         e.preventDefault();
     });
+
+
+    // news slider
+    var swiper = new Swiper('.news_slider', {
+        autoHeight: true, //enable auto height
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
     
 });
