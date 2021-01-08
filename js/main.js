@@ -153,4 +153,103 @@ $(function(){
     $('.jarallax').jarallax({
         speed: 0.9
     });
+
+
+    // product slider
+    var productSwiper1 = new Swiper('.brand_slide1', {
+        observer: true,
+        slidesPerView: 4,
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true,
+            hide: false
+        }
+    });
+    var productSwiper2 = new Swiper('.brand_slide2', {
+        observer: true,
+        slidesPerView: 4,
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true,
+            hide: false
+        }
+    });
+    var productSwiper3 = new Swiper('.brand_slide3', {
+        observer: true,
+        slidesPerView: 4,
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true,
+            hide: false
+        }
+    });
+
+
+    // product 탭메뉴 초기화
+    $(".product_tab_menu > li:first-child > a").addClass("active");
+    // product title 탭 초기화
+    $(".product .title > h3 > div:first-child").css("display", "block");
+    // product brand_box 탭 초기화
+    $(".product .brand_box:first-child").css("display", "block");
+    // product slider 탭 초기화
+    $(".product .brand_slide:first-child").css("display", "block");
+
+    // 리셋 및 안보이게 하기
+    function tabReset() {
+        // 탭메뉴 리셋
+        $(".product_tab_menu > li > a").removeClass("active");
+        // 모든 타이틀 안보이게 하기
+        $(".product .title > h3 > div").css("display", "none");
+        // 모든 brand_box 안보이게 하기
+        $(".product .brand_box").css("display", "none");
+        // 모든 slider 안보이게 하기
+        $(".product .brand_slide").css("display", "none");
+    };
+
+    // product 첫번째 탭메뉴 클릭시
+    $(".product_tab_menu > li:first-child > a").click(function (e) { 
+        tabReset();
+
+        // 첫번째 탭메뉴 활성화
+        $(this).addClass("active");
+        // 첫번째 타이틀 보이기
+        $(".product .title > h3 > div:first-child").css("display", "block");
+        // 첫번째 brand_box 탭 보이기
+        $(".product .brand_box:first-child").css("display", "block");
+        // 첫번쨰 slider 탭 보이기
+        $(".product .brand_slide:first-child").css("display", "block");
+
+        e.preventDefault();
+    });
+    // product 두번째 탭메뉴 클릭시
+    $(".product_tab_menu > li:nth-child(2) > a").click(function (e) { 
+        tabReset();
+
+        // 두번째 탭메뉴 활성화
+        $(this).addClass("active");
+        // 두번째 타이틀 보이기
+        $(".product .title > h3 > div:nth-child(2)").css("display", "block");
+        // 두번째 brand_box 탭 보이기
+        $(".product .brand_box:nth-child(2)").css("display", "block");
+        // 두번쨰 slider 탭 보이기
+        $(".product .brand_slide:nth-child(2)").css("display", "block");
+
+        e.preventDefault();
+    });
+    // product 세번째 탭메뉴 클릭시
+    $(".product_tab_menu > li:nth-child(3) > a").click(function (e) { 
+        tabReset();
+
+        // 세번째 탭메뉴 활성화
+        $(this).addClass("active");
+        // 세번째 타이틀 보이기
+        $(".product .title > h3 > div:nth-child(3)").css("display", "block");
+        // 세번째 brand_box 탭 보이기
+        $(".product .brand_box:nth-child(3)").css("display", "block");
+        // 세번쨰 slider 탭 보이기
+        $(".product .brand_slide:nth-child(3)").css("display", "block");
+
+        e.preventDefault();
+    });
+    
 });
