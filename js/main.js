@@ -254,9 +254,7 @@ $(function(){
 
 
     // news slider
-    var swiper = new Swiper('.news_slider', {
-        autoHeight: true, //enable auto height
-        spaceBetween: 10,
+    var newsSwiper = new Swiper('.news_slider', {
         loop: true,
         pagination: {
             el: '.swiper-pagination',
@@ -266,6 +264,53 @@ $(function(){
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+    });
+    newsSwiper.on('slideChange', function () {
+        console.log(newsSwiper.realIndex);
+        var whiteTxt1 = $(".news .white_text > div:first-child");
+        var whiteTxt2 = $(".news .white_text > div:nth-child(2)");
+        var whiteTxt3 = $(".news .white_text > div:nth-child(3)");
+        var previewImg = $(".preview").children("img");
+
+        function whitePreviewReset() {
+            $(".news .white_text > div").css({display: "none", right: "-300px", opacity: 0});
+            $(".preview").css("opacity", "0");
+        }
+        
+        switch (newsSwiper.realIndex) {
+            case 0:
+                // 초기화
+                whitePreviewReset();
+
+                // 애니메이션 설정
+                whiteTxt1.css("display", "block").animate({ right: 0, opacity: 1 }, 400);
+                previewImg.attr("src", "../images/main/news2.jpg").parent().animate({opacity: 1}, 800);
+                break;
+
+            case 1:
+                // 초기화
+                whitePreviewReset();
+
+                // 애니메이션 설정
+                whiteTxt2.css("display", "block").animate({ right: 0, opacity: 1 }, 400);
+                previewImg.attr("src", "../images/main/news3.png").parent().animate({opacity: 1}, 800);
+                break;
+        
+            case 2:
+                // 초기화
+                whitePreviewReset();
+
+                // 애니메이션 설정
+                whiteTxt3.css("display", "block").animate({ right: 0, opacity: 1 }, 400);
+                previewImg.attr("src", "../images/main/news1.png").parent().animate({opacity: 1}, 800);
+                break;
+        }
+    });
+
+    // preview 클릭 이벤트
+    $(".preview").click(function (e) { 
+        $(".swiper-button-next").click();
+        e.preventDefault();
     });
     
 });
