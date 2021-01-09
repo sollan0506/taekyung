@@ -2,9 +2,9 @@ $(function(){
 
     // fullpage 선언
     $('#fullpage').fullpage({
-        scrollBar: true
-	});
-
+        // scrollBar: true
+    });
+    
     // gnb_slick
     $('.gnb_slick').slick({
         dots: true,
@@ -312,5 +312,40 @@ $(function(){
         $(".swiper-button-next").click();
         e.preventDefault();
     });
-    
+
+
+
+    // rnd, recruit 영역 hover
+    $(".rnd_recruit .rnd > div").hover(
+        function () {
+            $(this).animate({top: "50%"}, 400);
+            $(this).css({width: "100%", height: "100%"});
+            $(this).parent().css("background", "url(../images/main/rnd_bg_over.jpg)");
+            $(this).children("p").animate({opacity: 1}, 400);
+            $(this).children("a").animate({opacity: 1}, 400);
+        }, 
+        function () {
+            $(this).animate({top: "60%"}, 400);
+            $(this).css({width: "auto", height: "auto"});
+            $(this).parent().css("background", "url(../images/main/rnd_bg.jpg)");
+            $(this).children("p").animate({opacity: 0}, 400);
+            $(this).children("a").animate({opacity: 0}, 400);
+        }
+    );
+    $(".rnd_recruit .recruit > div").hover(
+        function () {
+            $(this).animate({top: "50%"}, 400);
+            $(this).css({width: "100%", height: "100%"});
+            $(this).parent().css("background", "url(../images/main/inc_bg_over.jpg)");
+            $(this).children("p").animate({opacity: 1}, 400);
+            $(this).children("a").animate({opacity: 1}, 400);
+        }, 
+        function () {
+            $(this).animate({top: "60%"}, 400);
+            $(this).css({width: "auto", height: "auto"});
+            $(this).parent().css("background", "url(../images/main/inc_bg.jpg)");
+            $(this).children("p").animate({opacity: 0}, 400);
+            $(this).children("a").animate({opacity: 0}, 400);
+        }
+    );     
 });
