@@ -3,6 +3,20 @@ $(function(){
     // fullpage 선언
     $('#fullpage').fullpage({
         // scrollBar: true
+        navigation: true,
+        navigationPosition: 'right',
+        afterLoad: function(anchorLink, index){
+            var span = $("#fp-nav ul li a span, .fp-slidesNav ul li a span");
+            var spanActive = $("#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span");
+            
+            if(index === 1 || index === 5 || index === 6) {
+                span.css({background: "transparent", border: "2px solid #fff"});
+                spanActive.css("background", "#fff");
+            } else {
+                span.css({background: "transparent", border: "2px solid #000"});
+                spanActive.css("background", "#000");
+            }
+        }
     });
     
     // gnb_slick

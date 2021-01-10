@@ -259,3 +259,150 @@
     z-index: 20;
     padding: 3px 0 4px 5px;
 }
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+.gnb .lang_menu > div select::-ms-expand {
+    display: none;
+}
+
+
+
+
+/* ********** footer Area Start ********* */
+.footer .footer_container {
+    width: 100%;
+    background-color: #222222;
+    padding: 60px 0;
+    position: relative;
+}
+/* footer logo */
+.footer .footer_container > a {
+    display: block;
+    width: 166px;
+    height: 33px;
+    float: left;
+    margin-left: 50px;
+}
+.footer .footer_container > a > img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+/* footer_center */
+.footer .footer_container > .footer_center {
+    width: 60%;
+    max-width: 1280px;
+    color: #fff;
+    margin: 0 auto;
+}
+.footer .footer_center > address {
+    font-style: normal;
+    font-size: 1.6rem;
+}
+.footer address span {
+    display: inline-block;
+    position: relative;
+    margin: 0 40px 20px 0;
+}
+.footer address span:first-child::after,
+.footer address span:nth-child(2)::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 16px;
+    background-color: #fff;
+    position: absolute;
+    top: 5px;
+    right: -20px;
+}
+.footer address > a {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    color: #fff;
+    background-color: #666666;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+}
+.footer address .sns_group {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+.footer address .sns_group > a {
+    display: inline-block;
+}
+.footer address .sns_group > a:first-child,
+.footer address .sns_group > a:nth-child(2) {
+    margin-right: 40px;
+}
+.footer address .sns_group > a > img {
+    vertical-align: middle;
+}
+.footer .footer_center .copyright {
+    font-size: 1.4rem;
+    color: #aaa;
+    margin-top: 20px;
+}
+/* select_box */
+.footer .footer_container > .select_box {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 60px;
+    right: 50px;
+}   
+.footer .select_box label {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.footer .select_box label::after {
+    content: '';
+    display: inline-block;
+    width: 11px;
+    height: 12px;
+    position: absolute;
+    top: 17px;
+    right: 30px;
+    background: url(../images/main/ico_more.png) no-repeat 0 0;
+}
+.footer .select_box select {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    min-width: auto;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+
+    background: transparent;
+    line-height: normal;
+    color: #fff;
+    border: none;
+    font-size: 1.6rem;
+    position: relative;
+    z-index: 20;
+    padding: 0 0 0 30px;
+}
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+.footer .select_box select::-ms-expand {
+    display: none;
+}
+.footer .select_box select option {
+    display: inline-block;
+    width: 200px;
+    background: #000;
+}
