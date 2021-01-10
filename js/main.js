@@ -55,6 +55,18 @@ $(function(){
         }
     );
 
+
+    // gnb mobile
+    // 검은배경 클릭시 모바일gnb 닫힘
+    $(".gnb_mobile_back").click(function (e) { 
+        $(".gnb_mobile").animate({left: "-100%"}, 400);
+        $(this).css("display", "none");
+        e.preventDefault();
+    });
+
+
+
+
     // intro_slick
     $('.intro_slick').slick({
         dots: false,
