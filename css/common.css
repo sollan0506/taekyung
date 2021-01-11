@@ -16,6 +16,13 @@
     z-index: -1;
 }
 
+/* 스크롤 막기/활성화용 클래스 */
+.scrollDisable {
+    height:100%; 
+    min-height:100%;
+    overflow: hidden !important; 
+    touch-action: none;
+}
 
 /* ********** gnb Area Start ********* */
 .gnb {

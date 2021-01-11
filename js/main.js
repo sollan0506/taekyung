@@ -19,6 +19,17 @@ $(function(){
             }
         }
     });
+
+    // 스크롤 막기/활성화용 함수
+    function scrollDisable(){
+        $('html, body').addClass('scrollDisable').on('scroll touchmove mousewheel', function(e){
+            // e.preventDefault();
+        });
+    }
+    function scrollAble(){
+        $('html, body').removeClass('scrollDisable').off('scroll touchmove mousewheel');
+    }
+
     
     // gnb_slick
     $('.gnb_slick').slick({
@@ -63,6 +74,10 @@ $(function(){
         $(".gnb_mobile").animate({left: "0"}, 400);
         $(".gnb_mobile_back").css("display", "block");
         $(".gnb_x_box").animate({right: 0}, 600);
+        
+        // 스크롤 방지
+        scrollDisable();
+
         e.preventDefault();
     });
     // 검은배경 클릭시 모바일gnb 닫힘
@@ -70,6 +85,10 @@ $(function(){
         $(".gnb_mobile").animate({left: "-100%"}, 400);
         $(this).css("display", "none");
         $(".gnb_x_box").css("right", "-100%");
+        
+        // 스크롤 활성화
+        scrollAble();
+
         e.preventDefault();
     });
     // x 버튼 클릭시 모바일gnb 닫힘
@@ -77,6 +96,10 @@ $(function(){
         $(".gnb_mobile").animate({left: "-100%"}, 400);
         $(".gnb_mobile_back").css("display", "none");
         $(this).css("right", "-100%");
+        
+        // 스크롤 활성화
+        scrollAble();
+
         e.preventDefault();
     });
 
