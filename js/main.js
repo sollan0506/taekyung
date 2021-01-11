@@ -5,6 +5,7 @@ $(function(){
         // scrollBar: true
         navigation: true,
         navigationPosition: 'right',
+        responsiveWidth: 1025,
         afterLoad: function(anchorLink, index){
             var span = $("#fp-nav ul li a span, .fp-slidesNav ul li a span");
             var spanActive = $("#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span");
@@ -56,11 +57,33 @@ $(function(){
     );
 
 
-    // gnb mobile
+    // ----- gnb mobile -----
+    // gnb_m_btn 클릭시 모바일gnb 보이기
+    $(".gnb_m_btn").click(function (e) { 
+        $(".gnb_mobile").animate({left: "0"}, 400);
+        $(".gnb_mobile_back").css("display", "block");
+        $(".gnb_x_box").animate({right: 0}, 600);
+        e.preventDefault();
+    });
     // 검은배경 클릭시 모바일gnb 닫힘
     $(".gnb_mobile_back").click(function (e) { 
         $(".gnb_mobile").animate({left: "-100%"}, 400);
         $(this).css("display", "none");
+        $(".gnb_x_box").css("right", "-100%");
+        e.preventDefault();
+    });
+    // x 버튼 클릭시 모바일gnb 닫힘
+    $(".gnb_x_box").click(function (e) { 
+        $(".gnb_mobile").animate({left: "-100%"}, 400);
+        $(".gnb_mobile_back").css("display", "none");
+        $(this).css("right", "-100%");
+        e.preventDefault();
+    });
+
+    // angle 버튼 클릭시 서브메뉴 접히고 펼쳐지기
+    $(".gnb_mobile_angle").click(function (e) { 
+        $(".gnb_mobile_angle").not($(this)).removeClass("up").parent().next().slideUp();
+        $(this).toggleClass("up").parent().next().slideToggle();
         e.preventDefault();
     });
 

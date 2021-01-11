@@ -2,6 +2,11 @@
 
 
 /* 공통영역 구성 시작 */
+html, body {
+    position: relative;
+    overflow-x: hidden !important;
+}
+
 .container {
     width: 100%;
     height: 100%;
