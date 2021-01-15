@@ -1114,7 +1114,6 @@ html, body {
         height: 520px;
         margin: 0 2%;
     }
-    /* !important는 애니메이션 방지를 위함임 */
     .rnd_recruit .rnd_recruit_wrap .rnd {
         background: url(../images/main/rnd_bg_over.jpg);
         background-size: 100% 100%;
@@ -1124,6 +1123,7 @@ html, body {
         background: url(../images/main/inc_bg_over.jpg);
         background-size: 100% 100%;
     }
+    /* !important는 애니메이션 방지를 위함임 */
     .rnd_recruit .rnd > div, 
     .rnd_recruit .recruit > div {
         top: 50% !important;
