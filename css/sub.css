@@ -1,6 +1,258 @@
 @charset "utf-8";
 
 
+/* ******************** 공통영역 구성시작 ******************** */
+/* page_title */
+.page_title {
+    width: 100%;
+    height: 300px;
+    background: url(../images/intro/bg_top_vision.png) no-repeat center 0;
+    position: relative;
+    margin-top: 91px;
+}
+.page_title > div {
+    position: absolute; 
+    left: 50%; 
+    top: 50%;
+    
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+
+    color: #fff;
+    text-align: center;
+}
+.page_title > div h2 {
+    font-size: 5rem;
+}
+.page_title > div > span {
+    font-size: 2.8rem;
+}
+
+/* page_nav */
+.page_nav {
+    width: 100%;
+    height: 32px;
+}
+.page_nav > ul {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    padding-left: 60px;
+}
+.page_nav > ul > li {
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.page_nav > ul > li:first-child {
+    width: 15px;
+    margin-right: 50px;
+}
+.page_nav > ul > li:nth-child(2) {
+    margin-right: 50px;
+}
+.page_nav > ul > li:first-child::after,
+.page_nav > ul > li:nth-child(2)::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -30px;
+    background: url(../images/intro/ico_arr_rt.png) no-repeat 0 center;
+}
+.page_nav > ul > li:first-child > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/intro/ico_home.png) no-repeat 0 center;
+}
+.page_nav > ul > li:nth-child(2) > a { 
+    display: block;
+    height: 100%;
+    font-size: 1.5rem;
+    line-height: 32px;
+    color: #999;
+}
+.page_nav > ul > li:nth-child(3) > span {
+    display: block;
+    width: 100px;
+    height: 100%;
+    line-height: 32px;
+    position: relative;
+}
+.page_nav > ul > li:nth-child(3) > span > label {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+.page_nav > ul > li:nth-child(3) > span > label::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background: url(../images/intro/ico_select.png) no-repeat 0 center;
+    background-size: contain;
+}
+.page_nav > ul > li:nth-child(3) > span > select {
+    display: inline-block;
+    width: 100%;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+
+    background: transparent;
+    line-height: 32px;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    font-size: 1.4rem;
+    position: relative;
+    z-index: 20;
+    padding: 3px 0 3px 5px;
+}
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+.page_nav > ul > li:nth-child(3) > span > select::-ms-expand {
+    display: none;
+}
+
+
+
+
+/* ******************** 개별영역 구성시작 ******************** */
+/* ******************** intro.html ********************* */
+/* intro_intro */
+.intro_intro {
+    width: 100%;
+    padding-top: 80px;
+    text-align: center;
+}
+.intro_intro > h3 {
+    font-size: 5.4rem;
+}
+.intro_intro > h3 > span {
+    display: block;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.intro_intro > h3 > span:nth-child(2) {
+    font-weight: 700;
+}
+.intro_intro > h3 > span:nth-child(2) > span {
+    color: #ee1b22;
+}
+.intro_intro > .dots {
+    width: 10px;
+    margin: 30px auto;
+}
+.intro_intro > .dots > div {
+    width: 7px;
+    height: 7px;
+    background-color: #ee1b22;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.intro_intro > .dots > div:last-child {
+    margin-bottom: 0;
+}
+.intro_intro > p {
+    color: #666;
+    font-size: 2.8rem;
+    margin-bottom: 120px;
+}
+
+
+/* intro_vision */
+.intro_vision {
+    background: url(../images/intro/bg_vision.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 80px 0;
+    text-align: center;
+}
+.intro_vision > h3 {
+    font-weight: 700;
+    font-size: 5rem;
+}
+.intro_vision > h3 > span {
+    display: block;
+}
+.intro_vision > h3 > span:nth-child(2) > span {
+    font-weight: 400;
+    color: #666;
+}
+.intro_vision > div > div {
+    margin-top: 90px;
+}
+.intro_vision > div > div > h4 {
+    font-size: 4.8rem;
+    color: #ee1b22;
+    margin-bottom: 40px;
+}
+.intro_vision > div > div > h5 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.intro_vision > div > div > p {
+    font-size: 2.2rem;
+    color: #666;
+}
+.intro_vision > div > div > p > span {
+    display: block;
+}
+.intro_vision .value > ul {
+    width: 1200px;
+    margin: 0 auto;
+}
+.intro_vision .value > ul > li {
+    width: 25%;
+    float: left;
+    vertical-align: top;
+}
+.intro_vision .value > ul > li > .white_circle {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.intro_vision .value .white_circle > div {
+    font-size: 2.6rem;
+    font-weight: 700;
+    background-repeat: no-repeat;
+    background-position: center 45px;
+    padding-top: 145px;
+}
+.intro_vision .value > ul > li:first-child > .white_circle > div {
+    background-image: url(../images/intro/bg_value01.png);
+}
+.intro_vision .value > ul > li:nth-child(2) > .white_circle > div {
+    background-image: url(../images/intro/bg_value02.png);
+}
+.intro_vision .value > ul > li:nth-child(3) > .white_circle > div {
+    background-image: url(../images/intro/bg_value03.png);
+}
+.intro_vision .value > ul > li:nth-child(4) > .white_circle > div {
+    background-image: url(../images/intro/bg_value04.png);
+}
+.intro_vision .value > ul > li > p {
+    font-size: 2.4rem;
+    margin-top: 30px;
+}
 
 
 
