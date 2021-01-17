@@ -1,20 +1,11 @@
 @charset "utf-8";
 
-/* Jarallax 셋팅 */
-.jarallax {
+
+html, body {
     position: relative;
-    z-index: 0;
+    overflow-x: hidden !important;
 }
-.jarallax > .jarallax-img {
-    position: absolute;
-    object-fit: cover;
-    font-family: 'object-fit: cover';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
+
 
 /* 스크롤 막기/활성화용 클래스 */
 .scrollDisable {
@@ -320,7 +311,7 @@
     top: 0;
     left: -100%;
     z-index: 1111;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .gnb_mobile .gnb_mobile_header {
     width: 100%;
