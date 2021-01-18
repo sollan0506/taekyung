@@ -4,11 +4,13 @@
 /* ******************** 공통영역 구성시작 ******************** */
 /* page_title */
 .page_title {
-    width: 100%;
+    width: 130%;
     height: 300px;
     background: url(../images/intro/bg_top_vision.png) no-repeat center 0;
     position: relative;
-    margin-top: 91px;
+    left: -15%;
+    margin-top: 90px;
+    border-radius: 0 0 50% 50%;
 }
 .page_title > div {
     position: absolute; 
@@ -26,6 +28,7 @@
 }
 .page_title > div h2 {
     font-size: 5rem;
+    margin-bottom: 20px;
 }
 .page_title > div > span {
     font-size: 2.8rem;
@@ -143,6 +146,7 @@
 }
 .intro_intro > h3 {
     font-size: 5.4rem;
+    letter-spacing: -2px;
 }
 .intro_intro > h3 > span {
     display: block;
@@ -172,7 +176,12 @@
 .intro_intro > p {
     color: #666;
     font-size: 2.8rem;
+    word-break: keep-all;
+    letter-spacing: -2px;
     margin-bottom: 120px;
+}
+.intro_intro > p > span {
+    display: block;
 }
 
 
@@ -199,6 +208,7 @@
 }
 .intro_vision > div > div > h4 {
     font-size: 4.8rem;
+    line-height: 1;
     color: #ee1b22;
     margin-bottom: 40px;
 }
@@ -215,7 +225,7 @@
     display: block;
 }
 .intro_vision .value > ul {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .intro_vision .value > ul > li {
@@ -250,32 +260,143 @@
     background-image: url(../images/intro/bg_value04.png);
 }
 .intro_vision .value > ul > li > p {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     margin-top: 30px;
+    letter-spacing: -2px;
+    word-break: keep-all;
 }
 
 
 
 /* ******************** media Query ********************* */
 @media only screen and (max-width:1462px) {
+    .page_nav > ul {
+        padding-left: 20px;
+    }
 }
 @media only screen and (max-width:1200px) {
+    .page_nav > ul {
+        width: 300px;
+        margin: 60px auto 0 auto;
+    }
+
+    /* intro */
+    .intro_vision {
+        padding: 80px 20px;
+    }
 }
 @media only screen and (max-width:1120px) {
 }
 @media only screen and (max-width:1040px) {
 }
 @media only screen and (max-width:1024px) {
+    .page_title {
+        margin-top: 82px;
+    }
+    .page_title > div > span {
+        display: block;
+    }
+
+    /* intro */
+    .intro_vision > h3 {
+        font-size: 4rem;
+    }
+    .intro_vision > div > div > h5 {
+        font-size: 3.4rem;
+        line-height: 1.2;
+    }
+    .intro_vision .value > ul > li {
+        width: 50%;
+    }
+    .intro_vision .value > ul > li:first-child,
+    .intro_vision .value > ul > li:nth-child(2) {
+        margin-bottom: 50px;
+    }
 }
 @media only screen and (max-width:824px) {
 }
 @media only screen and (max-width:768px) {
+    .page_title > div h2 {
+        font-size: 4rem;
+    }
+    .page_nav {
+        display: none;
+    }
+
+    /* intro */
+    .intro_intro > h3 {
+        font-size: 4.4rem;
+    }
+    .intro_intro > p > span {
+        display: inline;
+    }
+    .intro_vision > h3 {
+        font-size: 3.2rem;
+    }
+    .intro_vision > div > div > h5 {
+        font-size: 2.8rem;
+    }
 }
 @media only screen and (max-width:640px) {
+    .page_title {
+        margin-top: 48px;
+    }
+    .page_title > div h2 {
+        font-size: 3.2rem;
+    }
+    .page_title > div > span {
+        font-size: 2rem;
+    }
+
+    /* intro */
+    .intro_intro > h3 {
+        font-size: 3.4rem;
+    }
+    .intro_intro > p {
+        font-size: 2rem;
+    }
+    .intro_intro > p > span {
+        display: block;
+    }
+    .intro_vision > h3 {
+        font-size: 2.8rem;
+    }
+    .intro_vision > div > div > h4 {
+        font-size: 3.2rem;
+    }
+    .intro_vision > div > div > h5 {
+        font-size: 2.4rem;
+    }
+    .intro_vision .value > ul > li {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .intro_vision .value > ul > li:last-child {
+        margin-bottom: 0;
+    }
 }
 @media only screen and (max-width:536px) {
+    /* intro */
+    .intro_vision > h3 > span {
+        display: inline;
+        word-break: keep-all;
+    }
+    .intro_vision > div > div > h5 {
+        word-break: keep-all;
+    }
+    .intro_vision > div > div > p {
+        font-size: 2rem;
+    }
+    .intro_vision > div > div > p > span {
+        display: inline;
+        word-break: keep-all;
+    }
 }
 @media only screen and (max-width:448px) {
+    /* intro */
+    .intro_intro > h3 {
+        font-size: 3rem;
+    }
 }
 @media only screen and (max-width:376px) {
 }
