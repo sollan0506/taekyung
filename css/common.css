@@ -798,11 +798,11 @@ html, body {
 
 
 /* ****************** animation **********************/
-/* .ani-stop {
+.ani-stop {
 	animation-name:none !important;
 	-webkit-animation-name:none !important;
 	opacity:0;
-} */
+}
 [class *= ani-start] {
 	animation-delay:0s;
 	-webkit-animation-delay:0s;

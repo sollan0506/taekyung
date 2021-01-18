@@ -89,4 +89,18 @@ $(function(){
         $(this).toggleClass("up").parent().next().slideToggle();
         e.preventDefault();
     });
+
+
+
+    // 스크롤에 따라서 css 애니메이션 발생
+    $(window).on('scroll',function(){
+        $(".animated").each(function(){
+            var currentTarget = $(this),
+                currentTargetPos = currentTarget.offset().top - $(".gnb").height() * 7; // 7을 곱한 이유는 스크롤에 따른 반응이 여유있게 되도록 하기 위함. 큰 의미 없는 숫자임.
+
+            if($(window).scrollTop() >= currentTargetPos){
+                currentTarget.removeClass('ani-stop');
+            }
+        });
+    });
 });
