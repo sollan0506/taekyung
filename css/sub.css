@@ -279,6 +279,235 @@
     background-image: url(../images/solution/bg_top_business.png);
 }
 
+/* solution_intro */
+.solution_intro {
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 20px;
+}
+.solution_intro > p {
+    font-size: 4rem;
+    padding-bottom: 100px;
+}
+.solution_intro > p > span {
+    display: block;
+    word-break: keep-all;
+}
+.solution_intro > p > span:last-child > span {
+    color: #ee1b22;
+    font-weight: 700;
+}
+.solution_intro > ul {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.solution_intro > ul > li {
+    float: left;
+    width: 33.33%;
+}
+.solution_intro > ul > li > div {
+    width: 376px;
+    height: 376px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+}
+.solution_intro > ul > li > div::after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    left: calc(50% - 16px);
+}
+.solution_intro > ul > li:first-child > div,
+.solution_intro > ul > li:first-child > div::after {
+    background-color: #EE1C23;
+}
+.solution_intro > ul > li:nth-child(2) > div,
+.solution_intro > ul > li:nth-child(2) > div::after {
+    background-color: #EC670D;
+}
+.solution_intro > ul > li:nth-child(3) > div,
+.solution_intro > ul > li:nth-child(3) > div::after {
+    background-color: #EC870D;
+}
+.solution_intro > ul > li > div > div {
+    color: #fff;
+    font-size: 3.6rem;
+    font-weight: 700;
+    padding-top: 200px;
+    background-repeat: no-repeat;
+    background-position: center 90px;
+}
+.solution_intro > ul > li:first-child > div > div {
+    background-image: url(../images/solution/business_step01.png);
+}
+.solution_intro > ul > li:nth-child(2) > div > div {
+    background-image: url(../images/solution/business_step02.png);
+}
+.solution_intro > ul > li:nth-child(3) > div > div {
+    background-image: url(../images/solution/business_step03.png);
+}   
+
+/* solution_solution */
+.solution_solution {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding-top: 120px;
+}
+.solution_solution .solution_bg1 {
+    width: 542px;
+    height: 773px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/solution/bg_light_01.png) 0 0 no-repeat;
+}
+.solution_solution .solution_bg2 {
+    width: 250px;
+    height: 421px;
+    position: absolute;
+    top: 733px;
+    left: 0;
+    background: url(../images/solution/bg_light_02.png) 0 0 no-repeat;
+}
+.solution_solution .solution_bg3 {
+    width: 528px;
+    height: 519px;
+    position: absolute;
+    top: 410px;
+    right: 0;
+    background: url(../images/solution/bg_light_04.png) 0 0 no-repeat;
+}
+.solution_solution > h3 {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+.solution_solution > ul {
+    max-width: 1200px;
+    position: relative;
+    z-index: 11;
+    margin: 0 auto 115px;
+}
+.solution_solution ul > li {
+    float: left;
+    width: 25%;
+    background-color: #fff;
+    padding: 0 9px 9px 0;
+}
+.solution_solution ul > li > div {
+    height: 330px;
+    padding-top: 157px;
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    border-color: #f7f7f7;
+    background-repeat: no-repeat;
+    background-position: center 50px;
+    box-shadow: 4px 5px 7px 1px rgba(66, 66, 66, 0.2);
+    position: relative;
+}
+.solution_solution ul > li:first-child > div {
+    background-image: url(../images/solution/bg_businessfood01.png);
+}
+.solution_solution ul > li:nth-child(2) > div {
+    background-image: url(../images/solution/bg_businessfood02.png);
+}
+.solution_solution ul > li:nth-child(3) > div {
+    background-image: url(../images/solution/bg_businessfood03.png);
+}
+.solution_solution ul > li:nth-child(4) > div {
+    background-image: url(../images/solution/bg_businessfood04.png);
+}
+.solution_solution ul > li:nth-child(5) > div {
+    background-image: url(../images/solution/bg_businessfood05.png);
+}
+.solution_solution ul > li:nth-child(6) > div {
+    background-image: url(../images/solution/bg_businessfood06.png);
+}
+.solution_solution ul > li:nth-child(7) > div {
+    background-image: url(../images/solution/bg_businessfood07.png);
+}
+.solution_solution ul > li:nth-child(8) > div {
+    background-image: url(../images/solution/bg_businessfood08.png);
+}
+.solution_solution .solution_txt > div:first-child {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.solution_solution .solution_txt > div:nth-child(2) {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ee1b22;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.solution_solution .solution_txt > div:nth-child(3) {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #666;
+}
+.solution_solution ul > li > div > div:last-child {
+    width: 100%;
+    height: 100%;
+    border: 3px solid #ee1b22;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.solution_solution ul > li > div > div:last-child > a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/solution/ico_more2.png) no-repeat center center;
+    background-color: #ee1b22;
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+}
+
+/* solution_partner */
+.solution_partner {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding-top: 120px;
+}
+.solution_partner h3 {
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.solution_partner ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 120px 0;
+}
+.solution_partner ul > li {
+    width: 16.66%;
+    height: 108px;
+    line-height: 108px;
+    text-align: center;
+    float: left;
+    background-color: #fff;
+    border-width: 0 1px 1px 0;
+    border-color: #e8e8e8;
+    border-style: solid;
+}
+.solution_partner ul > li > img {
+    vertical-align: middle;
+}
+
 
 
 
