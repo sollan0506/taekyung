@@ -47,9 +47,11 @@
     padding-left: 60px;
 }
 .page_nav > ul > li {
+    display: inline-block;
     height: 100%;
-    float: left;
+    /* float: left; */
     position: relative;
+    vertical-align: middle;
 }
 .page_nav > ul > li:first-child {
     width: 15px;
@@ -127,7 +129,7 @@
     font-size: 1.4rem;
     position: relative;
     z-index: 20;
-    padding: 3px 0 3px 5px;
+    /* padding: 3px 0 3px 5px; */
 }
 /* IE 10, 11의 네이티브 화살표 숨기기 */
 .page_nav > ul > li:nth-child(3) > span > select::-ms-expand {
@@ -519,7 +521,8 @@
 }
 @media only screen and (max-width:1200px) {
     .page_nav > ul {
-        width: 300px;
+        /* width: 350px; */
+        text-align: center;
         margin: 60px auto 0 auto;
     }
 
