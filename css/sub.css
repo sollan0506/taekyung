@@ -1041,6 +1041,13 @@
         padding: 0 20px;
     }
 
+    /* faq */
+    .faq_search {
+        padding: 0 20px;
+    }
+    .faq_list {
+        padding: 0 20px;
+    }
 }
 @media only screen and (max-width:1120px) {
 }
@@ -1194,6 +1201,15 @@
         width: 24%;
         margin-left: calc(1% - 4px);
     }
+
+    /* faq */
+    .faq_search form > div {
+        width: 75%;
+    }
+    .faq_search form > input {
+        width: 24%;
+        margin-left: calc(1% - 4px);
+    }
 }
 @media only screen and (max-width:640px) {
     .page_title {
@@ -1310,6 +1326,37 @@
     .notice_list > .pagenation {
         display: none;
     }
+
+    /* faq */
+    .faq_search {
+        height: auto;
+    }
+    .faq_search form > div {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+    .faq_search form > div::after {
+        display: none;
+    }
+    .faq_search form > div > input {
+        padding: 10px 20px 10px 30px;
+    }
+    .faq_search form > input {
+        width: 100%;
+        height: 50px;
+        margin-left: 0;
+    }
+    .faq_list > ul > li > .faq_title {
+        padding: 0 35px 0 48px;
+    }
+    .faq_list .faq_title > span {
+        display: none;
+    }
+    .faq_list .faq_sub {
+        padding: 35px 35px 35px 70px;
+        background-position: 25px center;
+    }
 }
 @media only screen and (max-width:536px) {
     /* intro */
@@ -1406,5 +1453,10 @@
     /* brand */
     .page_title > div > span {
         padding: 0 20px;
+    }
+
+    /* faq */
+    .page_title > div > span {
+        padding: 0;
     }
 }

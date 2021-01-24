@@ -23,4 +23,16 @@ $(function(){
         }
     ); 
     
+
+    // faq 펼쳐지고 접히게 하기
+    $(".faq_title > a").click(function (e) { 
+        $(".faq_sub").not($(this).parent().next()).slideUp();
+        $(this).parent().next().slideToggle();
+        e.preventDefault();
+    });
+    $(".faq_title > span > a").click(function (e) { 
+        $(".faq_sub").not($(this).parent().parent().next()).slideUp();
+        $(this).parent().parent().next().slideToggle();
+        e.preventDefault();
+    });
 });
