@@ -871,6 +871,108 @@
 
 
 
+/* ******************** faq.html ********************* */
+.page_title.faq {
+    background-image: url(../images/faq/bg_top_faq.png);
+}
+
+/* faq_search */
+.faq_search {
+    width: 100%;
+    max-width: 1200px;
+    height: 50px;
+    text-align: right;
+    margin: 80px auto 20px;
+}
+.faq_search form {
+    width: 100%;
+    height: 100%;
+}
+.faq_search form > div {
+    display: inline-block;
+    width: 400px;
+    height: 100%;
+    position: relative;
+}
+.faq_search form > div::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/notice/ico_search.png) no-repeat center center;
+}
+.faq_search form > div > input {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    padding: 10px 20px 10px 40px;
+}
+.faq_search form > input {
+    display: inline-block;
+    width: 120px;
+    height: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: #ee1b22;
+    color: #fff;
+    border: 0;
+    line-height: 50px;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* faq_list */
+.faq_list {
+    max-width: 1200px;
+    margin: 0 auto 120px;
+}
+.faq_list > ul {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #ee1b22;
+}
+.faq_list > ul > li {
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+.faq_list > ul > li > .faq_title {
+    width: 100%;
+    height: 103px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url(../images/faq/ico_Q.png) no-repeat 0 center;
+    padding: 0 40px 0 48px;
+}
+.faq_list .faq_title > a {
+    display: inline-block;
+    font-size: 2rem;
+    word-break: keep-all;
+}
+.faq_list .faq_title > span > a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/faq/ico_arr_bt.png) no-repeat 0 0;
+}
+.faq_list .faq_sub {
+    display: none;
+    background: #F2F2F2 url(../images/faq/ico_A.png) no-repeat 48px center;
+    padding: 60px 90px 60px 90px;
+}
+.faq_list .faq_sub > p {
+    font-size: 2rem;
+}
+
+
+
+
 /* ******************** media Query ********************* */
 @media only screen and (max-width:1462px) {
     .page_nav > ul {
