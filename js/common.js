@@ -92,6 +92,11 @@ $(function(){
 
 
 
+    // css 애니메이션 발생
+    $(".pre_ani").each(function(){
+        $(this).removeClass('ani-stop');
+    });
+
     // 스크롤에 따라서 css 애니메이션 발생
     $(window).on('scroll',function(){
         $(".animated").each(function(){
