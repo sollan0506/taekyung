@@ -10,6 +10,7 @@ $(function(){
             var span = $("#fp-nav ul li a span, .fp-slidesNav ul li a span");
             var spanActive = $("#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span");
             
+            // 페이지 수가 1이거나 5이거나 6이면 우측 네비게이션(점모양) 흰색으로, 아니라면 검은색으로
             if(index === 1 || index === 5 || index === 6) {
                 span.css({background: "transparent", border: "2px solid #fff"});
                 spanActive.css("background", "#fff");
@@ -23,7 +24,7 @@ $(function(){
 
     // intro_slick
     $('.intro_slick').slick({
-        dots: true,
+        dots: false,
         arrows: true,
         autoplay: true,
         autoplaySpeed: 4000,

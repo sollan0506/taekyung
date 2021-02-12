@@ -51,6 +51,7 @@ html, body {
     font-weight: 400;
 }
 
+/* 개별영역 구성 시작 */
 /* ********** intro Area Start ********* */
 .intro {
     width: 100%;
@@ -203,9 +204,9 @@ html, body {
     transform: translate(-50%,-50%);
 }
 /* dots */
-.slick-dots {
+/* .slick-dots {
     display: none !important;
-}
+} */
 
 
 /* ********** solution Area Start ********* */
