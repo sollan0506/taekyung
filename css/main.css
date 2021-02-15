@@ -673,7 +673,7 @@ html, body {
     background: url(../images/main/rnd_bg.jpg);
     background-repeat: no-repeat !important;
     background-position: 0 0;
-    background-size: cover;
+    background-size: cover !important;
     float: left;
     position: relative;
 
@@ -757,6 +757,7 @@ html, body {
 /* recruit */
 .rnd_recruit .recruit {
     background: url(../images/main/inc_bg.jpg);
+    background-size: cover;
     float: right;
 }
 
