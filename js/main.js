@@ -2,7 +2,7 @@ $(function(){
 
     // fullpage 선언
     $('#fullpage').fullpage({
-        // scrollBar: true
+        scrollBar: true,
         navigation: true,
         navigationPosition: 'right',
         responsiveWidth: 1025,
