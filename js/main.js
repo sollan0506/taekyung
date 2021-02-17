@@ -2,7 +2,7 @@ $(function(){
 
     // fullpage 선언
     $('#fullpage').fullpage({
-        scrollBar: true,
+        // scrollBar: true,     //ie에서 스크롤이 안되는 문제 해결 위해 추가했으나, 크롬콘솔창에 에러가 발생하여 주석 처리함. 
         navigation: true,
         navigationPosition: 'right',
         responsiveWidth: 1025,
