@@ -18,10 +18,9 @@ $(function(){
         dotsClass: 'slick-dots'
     });
 
-    // gnb 주메뉴 붉은선, gnb_hidden 보이기/숨기기
+    // gnb_hidden 보이기/숨기기
     $(".gnb > ul > li, .gnb_bg").hover(
         function () {
-            $(this).addClass("active");
             $(".gnb_hidden").css("display", "block");
             $(".gnb_bg").css("display", "block");
             
@@ -31,19 +30,8 @@ $(function(){
             $('.gnb_slick').slick('setPosition'); 
         }, 
         function () {
-            $(this).removeClass("active");
             $(".gnb_hidden").css("display", "none");
             $(".gnb_bg").css("display", "none");
-        }
-    );
-
-    // gnb 서브메뉴 붉은선
-    $(".gnb .gnb_hidden > ul > li > a").hover(
-        function () {
-            $(this).addClass("active");
-        }, 
-        function () {
-            $(this).removeClass("active");
         }
     );
 

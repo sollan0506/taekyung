@@ -63,23 +63,24 @@ html, body {
     left: 0;
 }
 .gnb > ul > li > a {
-    display: inline-block;
+    display: block;
     width: 100%;
     height: 100%;
 }
 .gnb > ul > li > a > span {
+    display: inline-block;
     position: relative;
     line-height: 90px;
     font-size: 1.8rem;
 }
 .gnb > ul > li > a > span::after {
     content: '';
-    display: block;
+    display: inline-block;
     width: 0;
     height: 4px;
     background-color: #f00;
     position: absolute;
-    bottom: -8px;
+    bottom: 24px;
     left: 50%;
 
 	-webkit-transition: all 0.3s ease-in-out;
@@ -88,7 +89,7 @@ html, body {
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-.gnb > ul > li.active > a > span::after {
+.gnb > ul > li:hover > a > span::after {
     width: 100%;
     left: 0;
     right: 0;
@@ -126,13 +127,14 @@ html, body {
     margin-bottom: 8px;
 }
 .gnb .gnb_hidden > ul > li > a {
+    display: inline-block;
     font-size: 1.6rem;
     color: #707070;
     position: relative;
 }
 .gnb .gnb_hidden > ul > li > a::after {
     content: '';
-    display: block;
+    display: inline-block;
     width: 0;
     height: 1px;
     background-color: #f00;
@@ -146,7 +148,7 @@ html, body {
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-.gnb .gnb_hidden > ul > li > a.active::after {
+.gnb .gnb_hidden > ul > li > a:hover::after {
     width: 100%;
 }
 /* gnb slick slider */
